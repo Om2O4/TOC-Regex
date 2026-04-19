@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Parser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎓 Smart Resume Parser</h1>
+  <p>🚀 Campus Placement Validation System</p>
+</header>
+
+<div class="container">
+
+<form id="resumeForm">
+
+  <!-- PERSONAL -->
+  <div class="card">
+    <h2>👤 Personal Details</h2>
+
+    <div class="input-group">
+      <label>👤 Full Name</label>
+      <input type="text" id="name" placeholder="👤 Enter your full name (e.g. Rahul Sharma)">
+      <small id="nameError"></small>
+    </div>
+
+    <div class="input-group">
+      <label>📧 Email</label>
+      <input type="text" id="email" placeholder="📧 example@gmail.com">
+      <small id="emailError"></small>
+    </div>
+
+    <div class="input-group">
+      <label>📱 Phone</label>
+      <input type="text" id="phone" placeholder="📱 10-digit number (starts with 6-9)">
+      <small id="phoneError"></small>
+    </div>
+  </div>
+
+  <!-- ACADEMIC -->
+  <div class="card">
+    <h2>🎓 Academic Details</h2>
+
+    <div class="input-group">
+      <label>📊 CGPA</label>
+      <input type="text" id="cgpa" placeholder="📊 Enter CGPA (e.g. 8.5)">
+      <small id="cgpaError"></small>
+    </div>
+
+    <div class="input-group">
+      <label>📅 Graduation Year</label>
+      <input type="text" id="year" placeholder="📅 e.g. 2025">
+      <small id="yearError"></small>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL -->
+  <div class="card">
+    <h2>💼 Professional Details</h2>
+
+    <div class="input-group">
+      <label>🛠 Skills</label>
+      <input type="text" id="skills" placeholder="🛠 Java, Python, SQL">
+      <small id="skillsError"></small>
+    </div>
+
+    <div class="input-group">
+      <label>🔗 LinkedIn</label>
+      <input type="text" id="linkedin" placeholder="🔗 https://linkedin.com/in/username">
+      <small id="linkedinError"></small>
+    </div>
+  </div>
+
+  <!-- RESUME TEXT -->
+  <div class="card">
+    <h2>📄 Resume Text</h2>
+    <textarea id="resumeText" placeholder="📄 Paste your resume here to auto-extract details..."></textarea>
+  </div>
+
+  <button type="submit" class="btn">🚀 Validate & Extract</button>
+
+</form>
+
+<!-- OUTPUT -->
+<div class="card output">
+  <h2>📊 Extracted Data</h2>
+  <pre id="output">Your parsed data will appear here...</pre>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
